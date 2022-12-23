@@ -126,10 +126,8 @@ if mode == 3
     xdesired = varargin{2};
        
     % assemble x and y data, then find y values at desired x
-    x = interpn(data.L, data.VGS, data.VDS, data.VSB, xdata, ... 
-                        par.L, par.VGS, par.VDS, par.VSB);
-    y = interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, ... 
-                        par.L, par.VGS, par.VDS, par.VSB);
+    x = interpn(data.L, data.VGS, data.VDS, data.VSB, xdata, par.L, par.VGS, par.VDS, par.VSB);
+    y = interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB);
             
     % permute so that VGS dimension always comes first
     x = squeeze(permute(x, [2 1 3 4]));
@@ -176,11 +174,9 @@ if mode == 3
 else
     % simple interpolation in modes 1 and 2
     if length(data.VSB) > 1
-    output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, ... 
-                        par.L, par.VGS, par.VDS, par.VSB));
+    output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB));
     else
-    output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, ... 
-                        par.L, par.VGS, par.VDS));
+    output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, par.L, par.VGS, par.VDS));
     end                
 end
 
