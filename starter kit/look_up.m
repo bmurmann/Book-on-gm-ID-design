@@ -153,7 +153,7 @@ if mode == 3
                 x_left = x(1:idx, i);
                 y_left = y(1:idx, i);
                 output(i, j) = interp1(x_left, y_left, xdesired(j), par.METHOD, NaN);
-            else
+                else
                 crossings = length(find(diff(sign(x(:, i) - xdesired(j)+eps))));
                 if crossings > 1
                     output = [];
@@ -167,7 +167,7 @@ if mode == 3
                     return
                 end    
                 output(i, j) = interp1(x(:, i), y(:, i), xdesired(j), par.METHOD, NaN);
-            end    
+                end    
         end
     end
     
