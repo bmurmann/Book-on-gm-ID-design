@@ -9,13 +9,13 @@ The scripts provided here can be used to store DC-sweep simulation data from Spe
 
 * A model file for the CMOS technology that you want to characterize. For example, a set of PSP, BSIM3, BSIM4 or BSIM6 model cards.
 * A circuit simulator: Spectre (Cadence) or HSpice (Synopsys)
-•	A function for reading simulation data in into Matlab (pick one of these two options)
-o	For Spectre: cds_srr. This function is part of the Cadence Spectre/RF MATLAB Toolbox, see “Virtuoso Spectre Circuit Simulator RF Theory Manual.” You must ensure that your Matlab versions and MMSIM versions are compatible.
-o	For HSpice: loadsig. This function is included in Michael Perrott’s HSpice Toolbox for Matlab and Octave, http://www.cppsim.com/download_hspice_tools.html.
-•	It is assumed that you launch the provided code within a Matlab instance running in the same Unix/Linux environment as your simulator (to enable direct file exchange).
-•	It is assumed that you have some experience with setting up EDA tools. The provided scripts are far from “plug and play.” You need to look at each line in the header of the configuration file and determine appropriate adjustments for your system.
+* A function for reading simulation data in into Matlab (pick one of these two options)
+    * For Spectre: cds_srr. This function is part of the Cadence Spectre/RF MATLAB Toolbox, see “Virtuoso Spectre Circuit Simulator RF Theory Manual.” You must ensure that your Matlab versions and MMSIM versions are compatible.
+    *For HSpice: loadsig. This function is included in Michael Perrott’s HSpice Toolbox for Matlab and Octave, http://www.cppsim.com/download_hspice_tools.html.
+* It is assumed that you launch the provided code within a Matlab instance running in the same Unix/Linux environment as your simulator (to enable direct file exchange).
+* It is assumed that you have some experience with setting up EDA tools. The provided scripts are far from “plug and play.” You need to look at each line in the header of the configuration file and determine appropriate adjustments for your system.
 
-File Descriptions
+*File Descriptions*
 
 techsweep_spectre_run.m
 techsweep_hspice_run.m
