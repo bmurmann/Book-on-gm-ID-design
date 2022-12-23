@@ -1,2 +1,2 @@
 
-![Flow](flow.png)
+![](flow.png| width=100)
