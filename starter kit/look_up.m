@@ -46,7 +46,7 @@
 %
 % When more than one parameter is passed to the function as a vector, the output
 % becomes multidimensional. This behavior is inherited from the Matlab function 
-% ìinterpnî, which is at the core of the lookup function. The following example
+% ‚Äúinterpn‚Äù, which is at the core of the lookup function. The following example
 % produces an 11x11 matrix as the output:
 %
 % look_up(nch,'ID', 'VGS', 0:0.1:1, 'VDS', 0:0.1:1)
@@ -189,4 +189,4 @@ if length(size(output))==2 && min(size(output))==1
     output = output(:);
 end
                    
-return
+return 
