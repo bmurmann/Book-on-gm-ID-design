@@ -1,3 +1,3 @@
 
-<img src="flow.png" width="200" />
+<img src="flow.png" width="500" />
 
