@@ -166,7 +166,7 @@ if mode == 3
                     plot(1:length(x(:,i)), x(:,i), '-x', 1:length(x(:,i)), ones(1, length(x(:,i)))*xdesired(j));
                     return
                 end    
-                    output(i, j) = interp1(x(:, i), y(:, i), xdesired(j), par.METHOD, NaN);
+                    output(i, j) = interp1(x(:, i), y(:, i), xdesired(j), par.METHOD, NaN)
             end    
         end
     end
