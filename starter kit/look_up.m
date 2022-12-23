@@ -174,9 +174,9 @@ if mode == 3
 else
     % simple interpolation in modes 1 and 2
     if length(data.VSB) > 1
-    output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB));
+        output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB));
     else
-    output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, par.L, par.VGS, par.VDS));
+        output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, par.L, par.VGS, par.VDS));
     end                
 end
 
