@@ -149,7 +149,7 @@ if mode == 3
                 y_right = y(idx:end, i);
                 output(i, j) = interp1(x_right, y_right, xdesired(j), par.METHOD, NaN);
                 % If gm/Cgg of gm/Cgs is the x value, find maximum and limit search range to VGS values to the LEFT
-            elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGG'))
+                elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGG'))
                 x_left = x(1:idx, i);
                 y_left = y(1:idx, i);
                 output(i, j) = interp1(x_left, y_left, xdesired(j), par.METHOD, NaN);
