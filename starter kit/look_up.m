@@ -185,4 +185,4 @@ if length(size(output))==2 && min(size(output))==1
     output = output(:);
 end
                    
-return 
+return  
