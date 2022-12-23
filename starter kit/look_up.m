@@ -46,7 +46,7 @@
 %
 % When more than one parameter is passed to the function as a vector, the output
 % becomes multidimensional. This behavior is inherited from the Matlab function 
-% â€œinterpnâ€, which is at the core of the lookup function. The following example
+% “interpn”, which is at the core of the lookup function. The following example
 % produces an 11x11 matrix as the output:
 %
 % look_up(nch,'ID', 'VGS', 0:0.1:1, 'VDS', 0:0.1:1)
@@ -126,8 +126,10 @@ if mode == 3
     xdesired = varargin{2};
        
     % assemble x and y data, then find y values at desired x
-    x = interpn(data.L, data.VGS, data.VDS, data.VSB, xdata, par.L, par.VGS, par.VDS, par.VSB);
-    y = interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB);
+    x = interpn(data.L, data.VGS, data.VDS, data.VSB, xdata, ... 
+                        par.L, par.VGS, par.VDS, par.VSB);
+    y = interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, ... 
+                        par.L, par.VGS, par.VDS, par.VSB);
             
     % permute so that VGS dimension always comes first
     x = squeeze(permute(x, [2 1 3 4]));
@@ -149,11 +151,11 @@ if mode == 3
                 y_right = y(idx:end, i);
                 output(i, j) = interp1(x_right, y_right, xdesired(j), par.METHOD, NaN);
                 % If gm/Cgg of gm/Cgs is the x value, find maximum and limit search range to VGS values to the LEFT
-                elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGG'))
+            elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGG'))
                 x_left = x(1:idx, i);
                 y_left = y(1:idx, i);
                 output(i, j) = interp1(x_left, y_left, xdesired(j), par.METHOD, NaN);
-                else
+            else
                 crossings = length(find(diff(sign(x(:, i) - xdesired(j)+eps))));
                 if crossings > 1
                     output = [];
@@ -166,7 +168,7 @@ if mode == 3
                     plot(1:length(x(:,i)), x(:,i), '-x', 1:length(x(:,i)), ones(1, length(x(:,i)))*xdesired(j));
                     return
                 end    
-                    output(i, j) = interp1(x(:, i), y(:, i), xdesired(j), par.METHOD, NaN)
+                output(i, j) = interp1(x(:, i), y(:, i), xdesired(j), par.METHOD, NaN);
             end    
         end
     end
@@ -174,9 +176,11 @@ if mode == 3
 else
     % simple interpolation in modes 1 and 2
     if length(data.VSB) > 1
-        output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, par.L, par.VGS, par.VDS, par.VSB));
+    output = squeeze(interpn(data.L, data.VGS, data.VDS, data.VSB, ydata, ... 
+                        par.L, par.VGS, par.VDS, par.VSB));
     else
-        output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, par.L, par.VGS, par.VDS));
+    output = squeeze(interpn(data.L, data.VGS, data.VDS, ydata, ... 
+                        par.L, par.VGS, par.VDS));
     end                
 end
 
@@ -185,4 +189,4 @@ if length(size(output))==2 && min(size(output))==1
     output = output(:);
 end
                    
-return  
+return
