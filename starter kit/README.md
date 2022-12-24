@@ -15,10 +15,9 @@ The scripts provided here can be used to store DC-sweep simulation data from Spe
 * It is assumed that you launch the provided code within a Matlab instance running in the same Unix/Linux environment as your simulator (to enable direct file exchange).
 * It is assumed that you have some experience with setting up EDA tools. The provided scripts are far from “plug and play.” You need to look at each line in the header of the configuration file and determine appropriate adjustments for your system.
 
-*File Descriptions*
+**File Descriptions**
 
-techsweep_spectre_run.m
-techsweep_hspice_run.m
+*techsweep_spectre_run.m, techsweep_hspice_run.m*
 These are the top-level scripts that execute the lookup table generation. You should not have to edit these files, except for specifying the proper configuration file near the top.
 
 techsweep_config_psp_65_spectre.m
