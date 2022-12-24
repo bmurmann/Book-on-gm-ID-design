@@ -6,3 +6,15 @@
 [PDF](https://www.cambridge.org/core/books/systematic-design-of-analog-cmos-circuits/A07A705132E9DE52749F65EB63565CE0)
 
 <img src="cover.png" width="300" />
+
+Book BibTeX:
+```
+@book{jespers_murmann_2017, 
+  title={Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables}, 
+  author={Jespers, Paul G. A. and Murmann, Boris}, 
+  publisher={Cambridge University Press}, 
+  place={Cambridge},
+  year={2017},
+  DOI={10.1017/9781108125840} 
+}
+```
