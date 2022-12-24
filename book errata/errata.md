@@ -11,7 +11,7 @@
 | 283 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.75) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.75)   | |
 
 **Matlab Files Hosted by Publisher**  
-(These issues have been fixed in the respective files provided in this repo) 
+(These problems have been fixed in the respective files provided in this repo) 
 
 | MATLAB File | Line | Problem | Correction | Comment |
 |-------------|------|---------|------------|---------|
