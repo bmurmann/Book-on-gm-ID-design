@@ -6,6 +6,6 @@
 | 194 | Table 5.8, row 1, column 9: $V_{GS2}$ | Replace with $V_B$ | |
 | 244 | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,final} \over v_{OD,lin}})$  (6.34) | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,lin} \over v_{OD,final}})$  (6.34) | |
 | 244 | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.35) | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.35) | |
-| 244 | $\oemga_u = {1 \over \tau} = {1 \over \t_s} (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.37) |  | |
+| 244 | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.37) |  | |
 
 
