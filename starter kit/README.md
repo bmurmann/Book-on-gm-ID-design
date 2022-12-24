@@ -1,6 +1,6 @@
 **Matlab Scripts for gm/ID Lookup-Table Generation (Standalone Starter Kit)**
 
-The scripts provided here can be used to store DC-sweep simulation data from Spectre or HSpice as Matlab files (.mat). These data can then be used for lookup-table-based circuit sizing. The book by Jespers & Murmann provides Matlab scripts for the design examples of each chapter, lookup tables for a 65-nm process, and a lookup function (also contained in this repo) for data read-in and interpolation. The scripts provided here are for those who want to generate their own lookup tables. Please refer to Appendix 2 of our book for a more detailed description of the lookup table generation flow (summarized in the figure below).
+Our book comes with Matlab scripts for the design examples of each chapter, lookup tables for a 65-nm process, and a lookup function (updated version also contained in this directory) for data read-in and interpolation. The scripts provided in this repo are for those who want to generate their own lookup tables. Please refer to Appendix 2 of our book for a more detailed description of the lookup table generation flow (summarized in the figure below).
 
 
 <img src="flow.png" width="500" />
