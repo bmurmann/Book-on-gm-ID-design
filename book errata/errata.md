@@ -5,7 +5,7 @@
 | 13 | In Table 1.1: $J_D$ $( \mu A/m)$ | $J_D$ $(A/m)$ | |
 | 13 | Equation (1.6) uses the wrong value for $I_D/W$ $(149 ~ A/m)$| Using the correct value from Table 1.1 $(162~A/m)$, the result is $W = 12.3 ~ \mu m$ | |
 | 13 | Equation (1.8) uses the wrong value for $I_D/W$ $(2.8 ~ A/m)$| Using the correct value from Table 1.1 $(3.2~A/m)$, the result is $W = 156 ~ \mu m$ | |
-| 14 | Fig. 1.10 (a) $13.4/0.06$, (b) $179/0.06$| Per the above corrections, the proper geometries are (a) $12.3/0.06$, (b) $156/0.06$ | |
+| 14 | Fig. 1.10 (a) $13.4/0.06$, (b) $179/0.06$| Per the above corrections for page 13, the proper geometries are (a) $12.3/0.06$, (b) $156/0.06$ | |
 | 139 | The situation is similar for larger signals, which require lower q when the same distortion level must be maintained. | The situation is similar for larger signals, which require higher q when the same distortion level must be maintained. | |
 | 192 | <img src="table5.7_old.png" width="300" /> | <img src="table5.7_new.png" width="300" /> | |
 | 194 | Table 5.8, row 1, column 9: $V_{GS2}$ | Replace with $V_B$ | |
