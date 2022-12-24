@@ -3,11 +3,13 @@
 
 [Hardback](https://www.cambridge.org/us/academic/subjects/engineering/circuits-and-systems/systematic-design-analog-cmos-circuits-using-pre-computed-lookup-tables?format=HB) - 
 [eBook](https://www.cambridge.org/us/academic/subjects/engineering/circuits-and-systems/systematic-design-analog-cmos-circuits-using-pre-computed-lookup-tables?format=AR) - 
-[PDF](https://www.cambridge.org/core/books/systematic-design-of-analog-cmos-circuits/A07A705132E9DE52749F65EB63565CE0)
+[PDF](https://www.cambridge.org/core/books/systematic-design-of-analog-cmos-circuits/A07A705132E9DE52749F65EB63565CE0) - 
+[DOI](https://doi.org/10.1017/9781108125840)
+
 
 <img src="cover.png" width="300" />
 
-Book BibTeX:
+BibTeX
 ```
 @book{jespers_murmann_2017, 
   title={Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables}, 
