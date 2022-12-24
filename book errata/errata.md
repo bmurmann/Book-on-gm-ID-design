@@ -10,3 +10,8 @@
 | 283 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.75) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.75)   | |
 
 
+| MATLAB File | Problem | Correction | Comment |
+|:-------:|---------|------------|---------|
+|lookup.m |Some users see the error message: "No constructor 'lookup' with matching signature found." This error occurs due to a method named "lookup" in the Bloomberg toolbox (introduced in R2014a), which overloads the definition of lookup.m. |Reinstall Matlab without Bloomberg Datafeed toolbox or rename lookup.m.
+|lookup.m, line 153 | % If gm/Cgg or gm/Cgs is the x value, find maximum and limit search range to VGS values to the LEFT elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGG')) | % If gm/Cgg or gm/Cgs is the x value, find maximum and limit search range to VGS values to the LEFT elseif strcmp(numerator,'GM') && (strcmp(denominator,'CGG') || strcmp(denominator,'CGS'))| |
+| two_stage.m, line 24 | gmR = sqrt(s.L0)./d.beta | gmR = sqrt(s.L0./d.beta) | |
