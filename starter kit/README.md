@@ -5,7 +5,7 @@ The scripts provided here can be used to store DC-sweep simulation data from Spe
 
 <img src="flow.png" width="500" />
 
-***What You Need***
+**What You Need**
 
 * A model file for the CMOS technology that you want to characterize. For example, a set of PSP, BSIM3, BSIM4 or BSIM6 model cards.
 * A circuit simulator: Spectre (Cadence) or HSpice (Synopsys).
