@@ -9,6 +9,17 @@
 
 <img src="cover.png" width="300" />
 
+Discover a fresh approach to efficient and insight- driven analog integrated circuit
+design in nanoscale- CMOS with this hands- on guide.
+
+* Expert authors present a sizing methodology that employs SPICE-generated lookup tables, enabling close agreement between hand analysis and simulation.
+* Illustrates the exploration of analog circuit tradeoffs using the gm/ ID ratio as a central variable in script- based design flows, captured in downloadable Matlab code.
+* Includes over forty detailed worked examples, including the design of low- noise and low- distortion gain stages, and operational transconductance amplifiers.
+
+Whether you are a professional analog circuit designer, a researcher, or a graduate student, this book will provide you with the theoretical know- how and practical
+tools you need to acquire a systematic and re- use oriented design style for analog integrated circuits in modern CMOS.
+
+
 BibTeX
 ```
 @book{jespers_murmann_2017, 
