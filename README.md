@@ -19,8 +19,6 @@ design in nanoscale-CMOS with this hands-on guide.
 Whether you are a professional analog circuit designer, a researcher, or a graduate student, this book will provide you with the theoretical know-how and practical
 tools you need to acquire a systematic and re-use oriented design style for analog integrated circuits in modern CMOS.
 
-
-BibTeX:
 ```
 @book{jespers_murmann_2017, 
   title={Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables}, 
