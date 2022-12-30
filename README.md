@@ -21,7 +21,7 @@ tools you need to acquire a systematic and re-use oriented design style for anal
 
 ```
 @book{jespers_murmann_2017, 
-  title={Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables}, 
+  title={{Systematic Design of Analog CMOS Circuits: Using Pre-Computed Lookup Tables}}, 
   author={Jespers, Paul G. A. and Murmann, Boris}, 
   publisher={Cambridge University Press}, 
   place={Cambridge},
