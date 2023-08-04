@@ -7,7 +7,7 @@
 | 13 | Equation (1.8) uses the wrong value for $I_D/W$ $(2.8 ~ A/m)$| Using the correct value from Table 1.1 $(3.2~A/m)$, the result is $W = 156 ~ \mu m$ | |
 | 14 | Fig. 1.10 (a) $13.4/0.06$, (b) $179/0.06$| Per the above corrections for page 13, the proper geometries are (a) $12.3/0.06$, (b) $156/0.06$ | |
 | 139 | The situation is similar for larger signals, which require lower q when the same distortion level must be maintained. | The situation is similar for larger signals, which require higher q when the same distortion level must be maintained. | |
-| 192 | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/3ecb4ad9d55e7975eb3a61b478818d93d47e5b83/book_errata/table5.7_old.png" width="300" /> | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/3ecb4ad9d55e7975eb3a61b478818d93d47e5b83/book_errata/table5.7_new.png" width="300" /> |  |
+| 192 | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_old.png" width="300" /> | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_new.png" width="300" /> |  |
 | 194 | Table 5.8, row 1, column 9: $V_{GS2}$ | Replace with $V_B$ | |
 | 232 | ${g_m \over C_{Ftot}} = {1 \over \beta}{\omega_u \over \omega_{Ti}}(FO\cdot G+(1-\beta))$  (6.21) | ${g_m \over C_{Ftot}} = {1 \over \beta}\omega_u (FO\cdot G+(1-\beta))$  (6.21) | |
 | 244 | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,final} \over v_{OD,lin}})$  (6.34) | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,lin} \over v_{OD,final}})$  (6.34) | |
