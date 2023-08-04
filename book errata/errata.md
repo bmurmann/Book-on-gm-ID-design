@@ -9,6 +9,7 @@
 | 139 | The situation is similar for larger signals, which require lower q when the same distortion level must be maintained. | The situation is similar for larger signals, which require higher q when the same distortion level must be maintained. | |
 | 192 | <img src="table5.7_old.png" width="300" /> | <img src="table5.7_new.png" width="300" /> | |
 | 194 | Table 5.8, row 1, column 9: $V_{GS2}$ | Replace with $V_B$ | |
+| 232 | ${g_m \over C_{Ftot}} = {1 \over \beta}{\omega_u \over \omega_{Ti}}(FO\cdot G+(1-\beta))$  (6.21) | ${g_m \over C_{Ftot}} = {1 \over \beta}\omega_u (FO\cdot G+(1-\beta))$  (6.21) | |
 | 244 | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,final} \over v_{OD,lin}})$  (6.34) | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,lin} \over v_{OD,final}})$  (6.34) | |
 | 244 | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.35) | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.35) | |
 | 244 | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X)$  (6.37) | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.37)   | |
