@@ -23,7 +23,7 @@ grid;
 % Plot Vt against L
 vt = look_up(device, 'VT', 'VGS', 0.6, 'L', L);
 figure;
-plot(vt, L)
+plot(L, vt)
 ylabel('V_t [V]')
 xlabel('L [um]')
 grid;
