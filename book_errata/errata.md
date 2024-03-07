@@ -6,7 +6,7 @@
 | 13 | Equation (1.6) uses the wrong value for $I_D/W$ $(149 ~ A/m)$| Using the correct value from Table 1.1 $(162~A/m)$, the result is $W = 12.3 ~ \mu m$ | |
 | 13 | Equation (1.8) uses the wrong value for $I_D/W$ $(2.8 ~ A/m)$| Using the correct value from Table 1.1 $(3.2~A/m)$, the result is $W = 156 ~ \mu m$ | |
 | 14 | Fig. 1.10 (a) $13.4/0.06$, (b) $179/0.06$| Per the above corrections for page 13, the proper geometries are (a) $12.3/0.06$, (b) $156/0.06$ | |
-| 22 | $V_G = -Q_i/C_{0x}+\psi_S$  | $V_G = -Q_t/C_{0x}+\psi_S$  | The text before/after must also be adjusted, accordingly. Refer to Chapter 2 of [12] for the detauled derivation. |
+| 22 | $V_G = -Q_i/C_{ox}+\psi_S$  | $V_G = -Q_t/C_{ox}+\psi_S$  | The text before/after must also be adjusted, accordingly. Refer to Chapter 2 of [12] for the detailed derivation. |
 | 139 | The situation is similar for larger signals, which require lower q when the same distortion level must be maintained. | The situation is similar for larger signals, which require higher q when the same distortion level must be maintained. | |
 | 192 | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_old.png" width="300" /> | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_new.png" width="300" /> |  |
 | 194 | Table 5.8, row 1, column 9: $V_{GS2}$ | Replace with $V_B$ | |
