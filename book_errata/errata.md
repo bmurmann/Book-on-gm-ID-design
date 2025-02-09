@@ -20,11 +20,11 @@
 | 236 | $C_{gs} = {C_S+C_{Ftot} \over 3}$  (6.28) | $C_{gs} = {C_S+C_{Ftot} \over 2}$  (6.28) | |
 | 236 | ${\beta \over \beta_{max}} = {3 \over 4}$  (6.29) | ${\beta \over \beta_{max}} = {2 \over 3}$  (6.29) | |
 | 244 | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,final} \over v_{OD,lin}})$  (6.34) | $t_{lin} = \tau ln({1 \over \epsilon_d} \cdot {v_{OD,lin} \over v_{OD,final}})$  (6.34) | |
-| 244 | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.35) | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.35) | |
-| 244 | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.37) | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.37)   | |
+| 244 | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.35) | $t_s = t_{slew}+t_{lin} = \tau (X-1+ln({1 \over \epsilon_d \cdot X}))$  (6.35) | |
+| 244 | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.37) | $\omega_u = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X}))$  (6.37)   | |
 | 258 | e. $I_{D1}$ and $f_{Ti}$ using the $g_m/I_D$ vector <br> f. $C_{gg1}$ using $g_m$ and $f_{Ti}$. | e. $I_{D1}$ and $f_{T}$ using the $g_m/I_D$ vector <br> f. $C_{gg1}$ using $g_m$ and $f_{T}$.   | |
-| 267 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.58) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.58)   | |
-| 283 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.75) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X})$  (6.75)   | |
+| 267 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.58) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X}))$  (6.58)   | |
+| 283 | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d} \cdot X))$  (6.75) | $\omega_{u1} = {1 \over \tau} = {1 \over t_s} (X-1+ln({1 \over \epsilon_d \cdot X}))$  (6.75)   | |
 | 287 | 2. Up or downsize size the n-channel | 2. Up- or down-size the n-channel   | |
 
 **Matlab Files Hosted by Publisher**  
