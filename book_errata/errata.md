@@ -9,8 +9,9 @@
 | 22 | $V_G = -Q_i/C_{ox}+\Psi_S$  | $V_G = -Q_t/C_{ox}+\Psi_S$  | The text before/after must also be adjusted, accordingly. Refer to Chapter 2 of [12] for the detailed derivation. |
 | 46 | Y-axis unit of Fig. 2.16 is $A$  | Replace with $A/\mu m$  |  |
 | 139 | The situation is similar for larger signals, which require lower q when the same distortion level must be maintained. | The situation is similar for larger signals, which require higher q when the same distortion level must be maintained. | |
+| 153 | Polarity of $\Delta V_T$ source in Fig. 4.31 does not match sign convention used in equation (4.47).| Flip the $\Delta V_T$ source (+ sign should be at the gate of $M_2$). | |
 | 157 | $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_D\over I_{Ssq}} {A_{VT} \over L}$ (4.54)|  $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_{Ssq}\over I_D} {A_{VT} \over L}$ (4.54)| |
-| 157 | $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_D\over I_{Ssq}} {A_{VT} \over \sqrt{L \cdot L_{min}}}$ (4.54)|  $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_{Ssq}\over I_D} {A_{VT} \over \sqrt{L \cdot L_{min}}}$ (4.54)| |
+| 157 | $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_D\over I_{Ssq}} {A_{VT} \over \sqrt{L \cdot L_{min}}}$ (4.55)|  $\sigma_{\Delta I_D/I_{D1}} \approx {1 \over nU_T} \sqrt{I_{Ssq}\over I_D} {A_{VT} \over \sqrt{L \cdot L_{min}}}$ (4.55)| |
 | 161 | The mobility itself is proportional to $T^a$, where $a$ = -2…-3. | The mobility itself is proportional to $T^{-a}$, where $a$ = 2…3. | |
 | 192 | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_old.png" width="300" /> | <img src="https://github.com/bmurmann/Book-on-gm-ID-design/blob/main/book_errata/table5.7_new.png" width="300" /> |  |
 | 192 | F = 1 + F1 + F2 + F3 | F = 1 + F1 + F2 + F3 + F4 | |
