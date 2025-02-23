@@ -1,0 +1,35 @@
+** sch_path: /foss/designs/Book-on-gm-ID-design/starter_files_open_source_tools/sky130/noisetest_nfet_01v8_lvt.sch
+**.subckt noisetest_nfet_01v8_lvt
+vg g GND DC 0.75 AC 1
+vd d GND 0.9
+vsb GND b {vbx}
+XM1 d g GND b sky130_fd_pr__nfet_01v8_lvt L={lx} W={wx} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Hn n GND vd 1
+**** begin user architecture code
+
+
+.param wx=5 lx=0.15 vbx=0
+.save all
+.save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+.save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[id]
+
+.control
+set wr_vecnames
+noise v(n) vg dec 10 1 1e11 1
+noise v(n) vg lin  1 1 1 1
+echo $plots
+write noisetest_nfet_01v8_lvt.raw noise1.all
+
+setplot noise3
+print onoise_spectrum
+print onoise.m.xm1.msky130_fd_pr__nfet_01v8_lvt.1overf
+print onoise.m.xm1.msky130_fd_pr__nfet_01v8_lvt.id
+.endc
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,6 +1,6 @@
-**Matlab Scripts for gm/ID Lookup-Table Generation (Standalone Starter Kit)**
+**Scripts for $g_m/I_D$ Lookup-Table Generation (closed-source tools: Matlab, HSpice, Spectre)**
 
-Our book comes with Matlab scripts for the design examples of each chapter, lookup tables for a 65 nm process technology, and a lookup function (updated version also contained in this directory) for data read-in and interpolation. The scripts provided in this repo are for those who want to generate their own lookup tables. Please refer to Appendix 2 of our book for a more detailed description of the lookup table generation flow (summarized in the figure below).
+Our book comes with Matlab scripts for the design examples of each chapter, lookup tables for a 65 nm process technology, and a lookup function (updated version also contained in this directory) for data read-in and interpolation. The scripts provided in this folder are for those who want to generate their own lookup tables. Please refer to Appendix 2 of our book for a more detailed description of the lookup table generation flow (summarized in the figure below).
 
 
 <img src="flow.png" width="500" />

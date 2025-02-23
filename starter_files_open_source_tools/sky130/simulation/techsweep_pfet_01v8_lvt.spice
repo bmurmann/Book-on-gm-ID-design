@@ -1,0 +1,81 @@
+** sch_path: /foss/designs/Book-on-gm-ID-design/starter_files_open_source_tools/sky130/techsweep_pfet_01v8_lvt.sch
+**.subckt techsweep_pfet_01v8_lvt
+Hn 0 n vd 1
+vg 0 g DC 0.9 AC 1
+vd 0 d 0.9
+XM1 d g 0 b sky130_fd_pr__pfet_01v8_lvt L={lx} W={wx} nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+vb 0 b 0
+**** begin user architecture code
+
+
+.param wx=5 lx=0.35
+.noise v(n) vg lin 1 1 1 1
+
+.control
+option numdgt = 3
+set wr_singlescale
+set wr_vecnames
+
+compose l_vec  values 0.35 0.36 0.37 0.38 0.39
++ 0.4 0.5 0.6 0.7 0.8 0.9 1 2 3
+compose vg_vec start= 0 stop=1.8  step=25m
+compose vd_vec start= 0 stop=1.8  step=25m
+compose vb_vec start= 0 stop=-0.4 step=-0.2
+
+foreach var1 $&l_vec
+  alterparam lx=$var1
+  reset
+  foreach var2 $&vg_vec
+    alter vg $var2
+    foreach var3 $&vd_vec
+      alter vd $var3
+      foreach var4 $&vb_vec
+        alter vb $var4
+        run
+        wrdata techsweep_pfet_01v8_lvt.txt noise1.all
+        destroy all
+        set appendwrite
+        unset set wr_vecnames
+      end
+    end
+  end
+end
+unset appendwrite
+
+alterparam lx=0.35
+reset
+op
+show
+write techsweep_pfet_01v8_lvt.raw
+.endc
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[capbd]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[capbs]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cdd]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cgb]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cgd]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cgg]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[cgs]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[css]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gds]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gm]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[gmbs]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[id]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[l]
+.save @m.xm1.msky130_fd_pr__pfet_01v8_lvt[vth]
+.save @vb[dc]
+.save @vd[dc]
+.save @vg[dc]
+.save onoise.m.xm1.msky130_fd_pr__pfet_01v8_lvt.id
+.save onoise.m.xm1.msky130_fd_pr__pfet_01v8_lvt.1overf
+.save g d b n
+
+
+**** end user architecture code
+**.ends
+.end
