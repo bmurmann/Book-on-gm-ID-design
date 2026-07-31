@@ -1,4 +1,7 @@
 **/simulation/*.txt
 *.raw
 *.ipynb_checkpoints
-
+starter_files_open_source_tools/ihp-sg13cmos5l/simulations/techsweep_sg13_hv_nmos.txt
+starter_files_open_source_tools/ihp-sg13cmos5l/simulations/techsweep_sg13_hv_nmos_rf.txt
+starter_files_open_source_tools/ihp-sg13cmos5l/simulations/techsweep_sg13_hv_pmos.txt
+starter_files_open_source_tools/ihp-sg13cmos5l/simulations/techsweep_sg13_hv_pmos_rf.txt

@@ -1,0 +1,91 @@
+** sch_path: /foss/designs/Book-on-gm-ID-design/starter_files_open_source_tools/ihp-sg13cmos5l/techsweep_sg13_hv_pmos.sch
+**.subckt techsweep_sg13_hv_pmos
+Hn 0 n vd 1
+vg 0 g DC 0.8 AC 1
+vd 0 d 1.65
+vb 0 b 0
+XM1 d g 0 b sg13_hv_pmos w={wx} l={lx} ng=1 m=1 mm_ok=1
+**** begin user architecture code
+
+
+
+.lib cornerMOShv.lib mos_tt
+
+
+
+
+
+.save @n.xm1.nsg13_hv_pmos[cdd]
+.save @n.xm1.nsg13_hv_pmos[cgb]
+.save @n.xm1.nsg13_hv_pmos[cgd]
+.save @n.xm1.nsg13_hv_pmos[cgdol]
+.save @n.xm1.nsg13_hv_pmos[cgg]
+.save @n.xm1.nsg13_hv_pmos[cgs]
+.save @n.xm1.nsg13_hv_pmos[cgsol]
+.save @n.xm1.nsg13_hv_pmos[cjd]
+.save @n.xm1.nsg13_hv_pmos[cjs]
+.save @n.xm1.nsg13_hv_pmos[css]
+.save @n.xm1.nsg13_hv_pmos[gds]
+.save @n.xm1.nsg13_hv_pmos[gm]
+.save @n.xm1.nsg13_hv_pmos[gmb]
+.save @n.xm1.nsg13_hv_pmos[ids]
+.save @n.xm1.nsg13_hv_pmos[l]
+.save @n.xm1.nsg13_hv_pmos[sfl]
+.save @n.xm1.nsg13_hv_pmos[sid]
+.save @n.xm1.nsg13_hv_pmos[vth]
+.save @vb[dc]
+.save @vd[dc]
+.save @vg[dc]
+.save onoise.m.xm1.nsg13_hv_pmos.id
+.save onoise.m.xm1.nsg13_hv_pmos.1overf
+.save g d b n
+
+
+
+
+
+.param wx=5u lx=0.4u
+.op
+
+.control
+option numdgt = 3
+set wr_singlescale
+set wr_vecnames
+
+compose l_vec  values 0.4u 0.45u 0.5u 0.55u
++ 0.6u 0.7u 0.8u 0.9u 1u 2u 3u
+compose vg_vec start= 0 stop=3.301  step=25m
+compose vd_vec start= 0 stop=3.301  step=25m
+compose vb_vec start= 0 stop=-0.6   step=-0.2
+
+foreach var1 $&l_vec
+  alterparam lx=$var1
+  reset
+  foreach var2 $&vg_vec
+    alter vg $var2
+    foreach var3 $&vd_vec
+      alter vd $var3
+      foreach var4 $&vb_vec
+        alter vb $var4
+        run
+        wrdata techsweep_sg13_hv_pmos.txt all
+        destroy all
+        set appendwrite
+        unset set wr_vecnames
+      end
+    end
+  end
+end
+unset appendwrite
+
+alterparam lx=0.4u
+reset
+op
+show
+write techsweep_sg13_hv_pmos.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.end

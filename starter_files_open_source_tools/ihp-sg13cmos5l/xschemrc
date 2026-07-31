@@ -1,0 +1,10 @@
+# Source the PDK xschemrc file
+if {![info exists PDK]} {
+    source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+}
+
+# Add current directory to xschem library path
+append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
+
+# Store simulation files in local folder
+set local_netlist_dir 1
